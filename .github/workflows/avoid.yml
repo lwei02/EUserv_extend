@@ -1,7 +1,10 @@
 name: 'Avoid workflow being suspended'
 
 on:
-  workflow_dispatch:
+  schedule:
+    - cron: 00 02 * * *
+  watch:
+    types: [started]
 
 jobs:
   avoid_workflow_suspended:
