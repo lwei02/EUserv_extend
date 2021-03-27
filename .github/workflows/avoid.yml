@@ -2,7 +2,7 @@ name: 'Avoid workflow being suspended'
 
 on:
   schedule:
-    - cron: 00 02 * * *
+    - cron: '00 00 1 * *'
   watch:
     types: [started]
 
